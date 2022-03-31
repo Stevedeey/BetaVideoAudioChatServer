@@ -185,7 +185,6 @@ const disconnectHandler = (socket) => {
       });
     } else {
       rooms = rooms.filter((r) => r.id !== room.id);
-
     }
   }
 };
@@ -232,4 +231,5 @@ const directMessageHandler = (data, socket) => {
 
 server.listen(PORT, () => {
   console.log(`Server is listening on ${PORT}`);
+  console.log("Still listening");
 });
