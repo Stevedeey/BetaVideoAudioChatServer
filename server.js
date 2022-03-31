@@ -184,6 +184,7 @@ const disconnectHandler = (socket) => {
       });
     } else {
       rooms = rooms.filter((r) => r.id !== room.id);
+      console.log("Shola");
     }
   }
 };
